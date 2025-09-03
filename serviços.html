@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Serviços | PROCT'S</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(to right, #006400, #FFD700, #1E90FF);
+      color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+
+    svg {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .estado {
+      fill: #1E90FF;
+      stroke: white;
+      stroke-width: 1;
+      cursor: pointer;
+      transition: fill 0.3s;
+    }
+
+    .estado:hover {
+      fill: #FFD700;
+    }
+
+    footer {
+      background-color: #FFD700;
+      color: #006400;
+      padding: 20px;
+      font-weight: bold;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Serviços por Estado</h1>
+    <p>Clique em seu estado para ver os serviços disponíveis</p>
+  </header>
+<main>
+  <!-- Mapa SVG simplificado com links para cada estado -->
+  <svg viewBox="0 0 1000 1000">
+    <!-- Exemplo de alguns estados com links -->
+    <a xlink:href="servicos/ac.html"><path class="estado" d="M100,200 L120,220 L140,200 L120,180 Z" title="Acre"/></a>
+    <a xlink:href="servicos/al.html"><path class="estado" d="M700,600 L720,620 L740,600 L720,580 Z" title="Alagoas"/></a>
+    <a xlink:href="servicos/am.html"><path class="estado" d="M200,150 L220,170 L240,150 L220,130 Z" title="Amazonas"/></a>
+    <a xlink:href="servicos/ap.html"><path class="estado" d="M300,100 L320,120 L340,100 L320,80 Z" title="Amapá"/></a>
+    <a xlink:href="servicos/ba.html"><path class="estado" d="M650,550 L670,570 L690,550 L670,530 Z" title="Bahia"/></a>
+    <a xlink:href="servicos/ce.html"><path class="estado" d="M700,500 L720,520 L740,500 L720,480 Z" title="Ceará"/></a>
+    <a xlink:href="servicos/df.html"><path class="estado" d="M600,600 L610,610 L620,600 L610,590 Z" title="Distrito Federal"/></a>
+    <a xlink:href="servicos/es.html"><path class="estado" d="M680,700 L700,720 L720,700 L700,680 Z" title="Espírito Santo"/></a>
+    <a xlink:href="servicos/go.html"><path class="estado" d="M580,580 L600,600 L620,580 L600,560 Z" title="Goiás"/></a>
+    <a xlink:href="servicos/ma.html"><path class="estado" d="M600,400 L620,420 L640,400 L620,380 Z" title="Maranhão"/></a>
+    <a xlink:href="servicos/mg.html"><path class="estado" d="M620,650 L640,670 L660,650 L640,630 Z" title="Minas Gerais"/></a>
+    <a xlink:href="servicos/ms.html"><path class="estado" d="M500,650 L520,670 L540,650 L520,630 Z" title="Mato Grosso do Sul"/></a>
+    <a xlink:href="servicos/mt.html"><path class="estado" d="M480,550 L500,570 L520,550 L500,530 Z" title="Mato Grosso"/></a>
+    <a xlink:href="servicos/pa.html"><path class="estado" d="M400,300 L420,320 L440,300 L420,280 Z" title="Pará"/></a>
+    <a xlink:href="servicos/pb.html"><path class="estado" d="M740,480 L760,500 L780,480 L760,460 Z" title="Paraíba"/></a>
+    <a xlink:href="servicos/pe.html"><path class="estado" d="M720,520 L740,540 L760,520 L740,500 Z" title="Pernambuco"/></a>
+    <a xlink:href="servicos/pi.html"><path class="estado" d="M640,480 L660,500 L680,480 L660,460 Z" title="Piauí"/></a>
+    <a xlink:href="servicos/pr.html"><path class="estado" d="M580,780 L600,800 L620,780 L600,760 Z" title="Paraná"/></a>
+    <a xlink:href="servicos/rj.html"><path class="estado" d="M650,750 L670,770 L690,750 L670,730 Z" title="Rio de Janeiro"/></a>
+    <a xlink:href="servicos/rn.html"><path class="estado" d="M760,460 L780,480 L800,460 L780,440 Z" title="Rio Grande do Norte"/></a>
+    <a xlink:href="servicos/ro.html"><path class="estado" d="M180,300 L200,320 L220,300 L200,280 Z" title="Rondônia"/></a>
+    <a xlink:href="servicos/rr.html"><path class="estado" d="M250,80 L270,100 L290,80 L270,60 Z" title="Roraima"/></a>
+    <a xlink:href="servicos/rs.html"><path class="estado" d="M580,850 L600,870 L620,850 L600,830 Z" title="Rio Grande do Sul"/></a>
+    <a xlink:href="servicos/sc.html"><path class="estado" d="M580,820 L600,840 L620,820 L600,800 Z" title="Santa Catarina"/></a>
+    <a xlink:href="servicos/se.html"><path class="estado" d="M700,580 L720,600 L740,580 L720,560 Z" title="Sergipe"/></a>
+    <a xlink:href="servicos/sp.html"><path class="estado" d="M600,700 L620,720 L640,700 L620,680 Z" title="São Paulo"/></a>
+    <a xlink:href="servicos/to.html"><path class="estado" d="M540,480 L560,500 L580,480 L560,460 Z" title="Tocantins"/></a>
+  </svg>
+</main>
+
+  <footer>
+    &copy; 2025 PROCT'S Transportadora — Presença em todos os cantos do Brasil
+  </footer>
+</body>
+</html>
